@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let runs = [20, 33, 63, 15, 43, 65, 23];
+
+      total = 0;
+      for (i = 0; i < runs.length; i++) {
+        //PRINTING RUNS INFRONT OF OVER
+        document.write(`Over ${i + 1}: ${runs[i]} <br>`);
+        total += runs[i];
+      }
+
+      document.write(`Total runs : ${total} <br>`);
+      document.write(`RunRate : ${total / runs.length} <br>`);
+      document.write(`RunRate : ${(total / runs.length).toFixed(2)} <br>`);
+    </script>
+  </body>
+</html>

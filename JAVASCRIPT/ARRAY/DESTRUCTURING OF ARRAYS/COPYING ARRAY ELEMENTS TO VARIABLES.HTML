@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //COPYING ARRAY DATA TO VARIABLES
+      let a = [10, 20, 30];
+
+      //IF WE DONT KNOW DESTRUCTURING WE WILL DO
+      //   let x = a[0];
+      //   let y = a[1];
+      //   let z = a[2];
+      //   console.log(x, y, z);
+
+      //WE CAN DO IT USING DESTRUCTURING
+      let [x, y, z] = a;
+      //[x,y,z]=[10,20,30]
+      //THATS HOW IT WORKS
+      console.log(x, y, z);
+
+      //WHAT IF ARRAY HAS MORE DATA LIKE 6 AND YOU WANT STARTING 3 OF IT IN YOUR VARIABLES
+      let b = [1, 2, 3, 4, 5, 6];
+      let [l, m, n] = b;
+      console.log(l, m, n); //it will print lmn as 123 by skipping other data
+
+      //BUT WHAT IF WE WANT ONLY PARTICULAR DATA OF ARRAY TO STORE IN VARIABLE
+      //LIKE IF WE WANT TO STORE 2,4,6 IN VARIABLES "trp"
+      //AT START WE TOOK , TO SKIP FIRST INDEX THEN AT 3RD AND 5TH WE DID THE SAME
+      //DESTRUCTURING WITH SKIP OPTION
+      let [, t, , r, , p] = b;
+      console.log(t, r, p);
+
+      const names = [
+        `ali`,
+        `usman`,
+        `owais`,
+        `umar`,
+        `abu-bakar`,
+        `zuber`,
+        `rahil`,
+        `saber`,
+        `nadeem`,
+      ];
+      //BELOW WE ARE COPYING FIRST TWO VALUES OF ARRAY TO "ou" VARIABLES AND REMAINING VALUES/
+      //DATA IS COPYING TO ANOTHER ARRAY CALLED "i"
+      let [o, u, ...i] = names; //DESTRUCTURING WITH SPREAD OPERATOR
+      console.log(o, u, i);
+      let [n1, n2, , ...k] = names; //HERE WE ADDING FIRST 2 VALUES OF
+      //ARRAY IN VARIABLES CALLED "n1,n2" AND SKIPPING THIRD VALUE AND CONTINUEING OTHER
+      //REMAINING VALUES IN ARRAY "k"
+      console.log(n1, n2, k);
+    </script>
+  </body>
+</html>

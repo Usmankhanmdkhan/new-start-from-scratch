@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+       
+      let obj = {
+        add(a, b) {     //general function
+          return a + b;
+        },
+
+        sub: (a, b) => {      //arrow function
+          return a - b;
+        },
+
+        mul: function (a, b) {     //function expression
+          return a * b;
+        },
+      };
+
+      document.write(obj.add(2,1), "<br>");
+      document.write(obj.sub(2,1), "<br>");
+      document.write(obj.mul(2,1), "<br>");
+      console.log(obj.add(2,3));
+    </script>
+  </body>
+</html> 

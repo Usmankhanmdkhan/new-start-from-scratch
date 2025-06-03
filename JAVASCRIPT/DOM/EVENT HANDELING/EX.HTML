@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      img {
+        width: 300px;
+      height: 400px;
+        border: 2px solid red;
+        display: inline-block;
+        padding: auto;
+        margin-right: 20px;
+      }
+      div{
+      text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <img src="./F.png" alt="" id="img1"/>
+      <img src="./F.png" alt="" id="img2"/>
+      <img src="./F.png" alt="" id="img3"/>
+    </div>
+
+    <script>
+    const im1=document.querySelector('#img1');
+    const im2=document.querySelector('#img2');
+    const im3=document.querySelector('#img3');
+    im1.onmouseover=function(){im1.src='./B.png'};
+    im1.onmouseout=function(){im1.src='./F.png'};
+    im2.onmouseover=function(){im2.src='./B.png'};
+    im2.onmouseout=function(){im2.src='./F.png'};
+    im3.onmouseover=function(){im3.src='./B.png'};
+    im3.onmouseout=function(){im3.src='./F.png'};
+    </script>
+  </body>
+</html>

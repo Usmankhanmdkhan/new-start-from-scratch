@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //IF OK AFTER ENTERING DATA THAT VALUE WILL BE DISPLYED
+      //IF OK WITHOUT ENTERNING DATA BLANK
+      //IF YOU ENTERWD DEFAULT VALUE AND ENTER THEN THAT DEFAULT VALUE
+
+      //IF CANCEL NULL WILL BE RETURNED
+      let name = windows.prompt("ENTER YOUR NAME", "HACKER"); //HACKER IS A DEFAULT VALUE
+      document.write("HII ", name, "<br>");
+      let age = prompt("ENTER YOUR AGE");
+      document.write(age, "<br>");
+
+      //WE CAN TAKE TWO PROMPT VALUES IN ONE LINE TOO
+      //we can give a single space in string before and after without using &nbsp
+      document.write(name, " is ", age, " ", "year older"); 
+    </script>
+  </body>
+</html>

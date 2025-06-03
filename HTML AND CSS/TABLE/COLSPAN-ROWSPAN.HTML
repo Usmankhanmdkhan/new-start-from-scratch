@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      table {
+        border: 2px solid;
+        width: 70%;
+        text-align: center; /*this align for text in table*/
+        margin-top: 100px;
+      }
+   
+      caption{
+        font-size: 24px;
+        font-weight: bolder;
+        color: blue;
+      }
+
+      tr{
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- table>(tr>th*4)+tr*4>td*4 -->
+    <table  border align="center" >
+      <!--this align for table to be center of brower width-->
+
+      <caption>RESULT</caption>
+      <tr>
+        <th></th>
+        <th></th>
+        <!--WE USED COLSPAN HERE-->
+        <th colspan="3">Marks</th>   
+      </tr>
+      <tr>
+        <!--WE USED ROWSPAN HEREf-->
+        <th rowspan="5">STUDENTS</th>
+        <th>NAMES</th>
+        <th>ENG</th>
+        <th>TEL</th>
+        <th>HINDI</th>
+      </tr>
+      <tr>
+        <td>USMAN</td>
+        <td>91</td>
+        <td>85</td>
+        <td>84</td>
+      </tr>
+      <tr>
+        <td>UMAR</td>
+        <td>85</td>
+        <td>95</td>
+        <td>97</td>
+      </tr>
+      <tr>
+        <td>ZAINAB</td>
+        <td>97</td>
+        <td>100</td>
+        <td>76</td>
+      </tr>
+      <tr>
+        <td>ZAHRA</td>
+        <td>84</td>
+        <td>100</td>
+        <td>100</td>
+      </tr>
+    </table>
+  </body>
+</html>

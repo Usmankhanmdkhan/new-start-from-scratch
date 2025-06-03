@@ -1,0 +1,40 @@
+table {
+  font-size: 22px;
+  margin-top: 50px;
+  width: 1000px;
+}
+  
+caption {
+  font-size: xx-large;
+  font-family: "Times New Roman", Times, serif;
+  color: blue;
+  text-align: left;
+}
+
+/* tr {
+  color: white;
+} */
+
+tr:first-child {
+  color: yellow;
+  background-color: blue;
+  font-size: 26px;
+}
+
+/* we can do this to td also */
+tr:nth-child(odd) {
+  background-color: black;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(117, 112, 112);
+}
+/* till here */
+
+/* -------------------------------------------------------------------------------------------------- */
+/* td:hover will only affect particular cell */
+/* table:hover will affect entire table */
+tr:hover {
+  background-color: yellow;
+  color: blue;
+}

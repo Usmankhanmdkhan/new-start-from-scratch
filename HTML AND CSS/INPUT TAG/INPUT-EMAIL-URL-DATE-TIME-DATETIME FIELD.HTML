@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="action.php">
+      <label for="">EMAIL ID</label>
+      <br />
+      <!--IT TAKE ONLY EMAIL ID CONTAINING @GMAIL.COM IF WE TRY TO SUBMIT WITHOUT ENTERING PROPER
+      EMAIL IT WILL GIVE AN ERROR MASSAGE INSIDE INPUT BOX-->
+      <input type="email" id="eid" name="emailid" />
+      <br />
+
+      <label for="">URL</label>
+      <br />
+      <!--IT TAKES ONLY URL IF WE TRIED TO SUBMIT WITHOUT ENTERING PROPER URL WITH HTTP AND ALL 
+      IT WILL SHOW US AN ERROR MASSAGE INSIDE INPUT TAG-->
+      <!--example-->
+      <!--https://www.flipkart.com/?affid=affsiteplug&affExtParam1=0dae31475c680705ab0d3924781a6c3e&affExtParam2=60827-->
+      <input type="url" id="path" name="url" />
+      <br />
+
+      <label for="">TIME</label>
+      <br />
+      <input type="time" id="tm" name="time" />
+      <br />
+
+      <label for="">DATE</label>
+      <br />
+      <!--IT COMES WITH CALENDER AND ALL-->
+      <input type="date" id="dd" name="date" />
+      <br />
+
+      <label for="">DATE OF BIRTH</label>
+      <br />
+      <!--IT COMES WITH CALENDER AND ALL WITH NO ACCESS TO DATE LESS THAN MIN-->
+      <input
+        type="date"
+        id="dob"
+        name="dateofbirth"
+        min="1998-12-22"
+        max="2000-12-22"
+      />
+      <br />
+
+      <label for="">DATE_TIME</label>
+      <br />
+      <!--DATE AND TIME LOCAL-->
+      <input type="datetime-local" id="d&t" name="date&time" />
+      <br />
+
+      <input type="submit" id="bt1" name="subbuton" value="Submit" />
+    </form>
+  </body>
+</html>

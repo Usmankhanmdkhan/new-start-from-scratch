@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="b">
+    <h1 id="kk">HERE IT GOES</h1>
+    <div id="main">
+      <input type="button" value="ADD" onclick="addele()" />
+    </div>
+
+    <script>
+      function addele() {
+        const h = document.createElement("h1");
+        h.innerHTML = `Hello World&#128522;`;
+        h.style.color = `red`;
+        h.style.backgroundColor = `aqua`;
+        h.style.textAlign = `center `;
+        h.id = "newborn";
+        document.getElementById(`kk`).appendChild(h); //after kk id tag
+      }
+    </script>
+  </body>
+</html>

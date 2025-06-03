@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        accent-color: #ff00ff;
+      }
+      #sub {
+        font-size: 18px;
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="action.php">
+      <fieldset>
+        <legend>GENDER</legend>
+        <br />
+        <!--label for=id of radio button it will allow user to check if we click on lable too-->
+        <input type="radio" name="gender" id="gen1" value="male" />
+        <label for="gen1">MALE</label>
+        &nbsp;&nbsp;&nbsp;
+
+        <input type="radio" name="gender" id="gen2" value="female" />
+        <label for="gen2">FEMALE</label>
+        &nbsp;&nbsp;&nbsp;
+
+        <input type="radio" name="gender" id="gen3" value="others" />
+        <label for="gen3">OTHER</label>
+      </fieldset>
+
+      <br /><br />
+
+      <fieldset>
+        <legend>MARITAL STATUS</legend>
+        <input type="radio" name="MS" id="MS1" value="SINGLE" />
+        <label for="MS1">SINGLE</label>
+        &nbsp;&nbsp;&nbsp;
+
+        <input type="radio" name="MS" id="MS2" value="MARRIED" />
+        <label for="MS2">MARRIED</label>
+        &nbsp;&nbsp;&nbsp;
+
+        <input type="radio" name="MS" id="MS3" value="DIVORCED" />
+        <label for="MS3">DIVORCED</label>
+        &nbsp;&nbsp;&nbsp;
+
+        <input type="radio" name="MS" id="MS4" value="WIDOWED" />
+        <label for="MS4">WIDOWED</label>
+        &nbsp;&nbsp;&nbsp;
+
+        <input type="radio" name="MS" id="MS5" value="NEVER MARRIED" />
+        <label for="MS5">NEVER MARRIED</label>
+      </fieldset>
+      <br>
+      <input type="submit" value="Submit" name="submit" id="sub" />
+    </form>
+  </body>
+</html>

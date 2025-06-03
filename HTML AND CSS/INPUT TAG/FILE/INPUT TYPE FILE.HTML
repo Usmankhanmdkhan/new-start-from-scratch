@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--USE ENCTYPE FOR ENCRYPTION OF DATA IF FORM CONTAINS FILES ANY KINDA USE 
+    enctype="multipart/form-data"
+    WE CAN USE enctype="text/plain" FOR NORMAL FORMS CONTAING ONLY TEXT -->
+    <form
+      action="www.action.com/uploadfile.jsp"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <!--WE NEED TO USE METHOD POST AS FILE SIZE CAN BE ANY TYPE AND DATA SHOULD BE ENCRYPTED-->
+      <!--FILE TAG USED TO UPLOAD AUDIOS/VIDEOS/IMAGES/FILES-->
+      <!--ANY TYPE OF ANY SIZE OF FILE BUT ONLY ONE FILE-->
+      <!--ONLY ONE FILE, ANY SIZE, ANY TYPE-->
+      <input type="file" id="f1" name="file1" />
+      <br />
+      <!--MULTIPLE FILES CAN BE SELECTED HERE AS MULTIPLE ATTRIBUTE IS ENABLED -->
+      <!--MULTIPLE FILES, ANY SIZE, ANY TYPE-->
+      <input type="file" id="f2" name="file2" multiple />
+      <br />
+      <!--ACCEPT ATTRIBUTE IS USED TO GIVE RESTRICTION FOR SELECTION OF FILE TYPE-->
+      <!--ONLY ONE FILE,ANY SIZE, FROM FOLLOWING THREE TYPES-->
+      <!--ACCEPT="IMAGE/*" IT MEANS ALL KINDA IMAGES EX:JPG,HD,JPEG,GIF ETC...-->
+      <!--NO NEED TO RIGHT ACCEPT=".JPG,.PNG,.G=JPEG,.GIF"-->
+      <!--ACCEPT=".VIDEO/*" FOR ANY KINDA VIDEO ONLY-->
+      <!--ACCEPT=".AUDIO/*" FOR ANY KINDA VIDEO ONLY-->
+      <!--ACCEPT=".APPLICATION/*" FOR ANY KINDA APPLICATION ONLY-->
+      <!--ACCEPT="APPLICATION/*" MEANS ALL APPLICATIONS LIKE .TXT,.PDF,.DOCX,.XLSX"-->
+      <input type="file" id="f3" name="file3" accept=".pdf,.docx,.txt" />
+      <br />
+      <input type="submit" value="UPLOAD" />
+    </form>
+  </body>
+</html>

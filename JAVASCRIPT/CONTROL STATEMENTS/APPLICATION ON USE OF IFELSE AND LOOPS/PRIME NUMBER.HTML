@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>PRIME NUMBER CHECKING</h3>
+    <label for="">ENTER NUMBER</label>
+    <input type="text" id="n" placeholder="ENTER ANY +VE NUMBER" size="25" />
+    <input type="button" value="CHECK PRIME" onclick="isprime()" />
+    <br />
+    <br />
+    <output id="result"></output>
+    <script>
+      function isprime() {
+        let num;
+
+        num = +n.value;
+
+        let count = 0;
+        for (i = 1; i <= num; i++) {
+          if (num % i === 0) {
+            count++;
+          }
+        }
+
+        result.value =
+        count === 2 ? "IT IS A PRIME NUMBER" : "IT IS NOT A PRIME NUMBER";
+      }
+
+      //HOW IT WORKS IT FIRST TAKE I=1;
+      //I<=NUM THIS MEANS NUMBER WE ARE ENTERING IN INPUT BOX WILL GO FOR CONDITION OF LOOP
+      //WE TOOK COUNT HERE AS WE KNOW IF A NUMBER IS PRIME IT WILL ONLY BE PURELY DIVIDED BY 1 AND BY ITS OWN
+      //SO COUNT HAS TO BE 2 IF IT IS A PRIME NUMBER IF COUNT NUMBER INCREASES MORE THAN 2 THEN
+      //IT IS NOT A PRIME NUMBER
+
+      //SO AT START COUNT WAS 0 THEN  WE STARTED A LOOP IN WHICH THE NUMBER WE ARE GOING TO DIVIDE
+      //THE NUMBER FROM 1 TO THE LAST NUMBER WHICH WOULD BE ITSELF ONLY
+      //FOR EXAMPLE IF WE DEVIDE 29 FROM 1 TO 29 WE WILL SEE ONLY 1 AND 29 WILL GET REMINDER 0
+      //AFTER DIVIDING FROM EACH NUMBER AND WE WILL GET COUNT 2 AS IT IS A PRIME NUMBER
+      
+    </script>
+  </body>
+</html>

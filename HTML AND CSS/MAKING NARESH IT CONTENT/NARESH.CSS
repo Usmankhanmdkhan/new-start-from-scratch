@@ -1,0 +1,33 @@
+label{
+    font-size: 34px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+#grid-div {
+  display: grid;
+  /* grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr) 
+ ); no need of this */
+
+ grid-template-columns: auto auto auto;
+ grid-gap: 25px;
+ text-align: center;
+ background-color:cyan ;  /*it will affect whole main div not individual*/
+ 
+}
+
+/*for individual bc do this*/
+
+#grid-div div{
+background-color: rgb(255, 255, 125);
+border-radius: 20px;
+}
+
+#maindiv{
+    border:5px solid red  ;
+}

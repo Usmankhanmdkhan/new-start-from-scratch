@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        div{
+            background-color: aquamarine;
+            width: 30%;
+            margin: auto;
+            padding: 30px;
+        }
+        span{
+            color: red;
+        }
+        input{
+            border: none;
+            outline: none;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+    <form action="action.php">
+    <h1>SIMPLE INTEREST</h1>
+    <!--(label+br+(input#inp$)+br+br)*3-->
+    <label for="">PRINCIPLE AMOUNT</label><br>
+    <input type="text" id="inp1" autofocus/><span>&#8377</span><br /><br>
+    <label for="">TIME</label><br>
+    <input type="text" id="inp2" /><span>YEARS</span><br /><br>
+    <label for="">RATE OF INTEREST</label><br>
+    <input type="text" id="inp3" /><span>%</span><br /><br>
+    <input type="button" value="CALCULATE" onclick="compute()">
+    &nbsp;&nbsp;
+    <input type="reset" value="RESET"> <br><br>
+    <output id="result"></output>
+    </form>
+    </div>
+
+    <script>
+        function compute(){
+            let x,y,z,res;
+            x=inp1.value;
+            y=inp2.value;
+            z=inp3.value;
+            
+            res=x*y*z/100;
+
+            result.value="INTEREST AMOUT IS : "+ res;
+
+        }
+    </script>
+</body>
+</html>

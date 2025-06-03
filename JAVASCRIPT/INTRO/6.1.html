@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   <h2>hello</h2>; //ERROR
+      document.write("<h2>hello</h2>;");
+      //document.Write("hello") //ERROR
+      document.write(`<input type="text" id="inp1">`);
+      document.write("<input type='text' id='inp1'>");
+      document.write("<input type=`text` id=`inp1`>");
+      document.write('<input type=" text" id="inp1">');
+      //document.write("<input type="text" id="inp1">"); //ERROR
+
+      document.write(`<h1 id="h1">hii</h1>`);
+    </script>
+  </body>
+</html>

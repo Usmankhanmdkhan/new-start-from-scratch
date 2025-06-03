@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+      </head>
+      <body>
+        <form action="action.php" method="get">
+          <label for="">USERNAME</label>
+          <br />
+          <input type="text" id="uname" name="username" />
+          <br />
+          <label for="">PASSWORD</label>
+          <br />
+          <input type="password" id="pass" name="password" />
+          <br />
+          <label for="">Something</label>
+          <br />
+          <!--u cant see this info in below url becoz it is not getting send to the server bcoz 
+          it doesnt have name attribute-->
+          <input type="text" id="something" />
+          <br />
+          <!-- <button type="submit" name="login">LOGIN</button> -->
+          <input type="submit" id="sub" value="LOGIN">
+          <br />
+          <!--YOU CAN SEE NAME ATTRIBUTE AND ITS VALUE IN URL THOUGH 3RD INPUT TAG HAVING ID BUT 
+          THE INFORMATION IS NOT SENDING TO SEVER ON BEHALF OF ID U NEED NAME ATTRIBUTE THERE-->
+          <!-- file:///C:/Users/PATHAN/Desktop/new%20journey%20from%20scratch/FORM/action.php?
+          username=usman&password=6484&login= -->
+        </form>
+      </body>
+    </html>
+  </body>
+</html>

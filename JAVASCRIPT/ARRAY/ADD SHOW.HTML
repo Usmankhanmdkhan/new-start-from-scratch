@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- span{Enter value}+input#inp+br+input:button#btn1{ADD}+&nbsp+input:button#btn2{SHOW}+br+output+br+script -->
+    <span>Enter value :</span>
+    <input type="text" id="inp" autofocus>
+    <br>
+    <input type="button" value="ADD" id="btn1" ></input>
+    &nbsp; 
+    <input type="button" value="SHOW" id="btn2" ></input>
+    <br>
+    <output></output>
+
+    <script>
+        //DECLARING EMPTY ARRAY AND INDEX VALUE=0;
+        //GLOBAL DECLARATION OF ARRAY"elements" AND VARIABLE "index"
+        let elements=[];
+        let index=0;
+        
+        document.querySelector(`#btn1`).onclick=function (){
+            const t=document.querySelector(`input`);
+            elements[index]=t.value
+            index++;
+            t.value=``;
+            t.focus();
+        }
+
+        document.querySelector(`#btn2`).onclick=function (){
+            const t=document.querySelector(`input`);
+            const op=document.querySelector("output"); 
+            op.innerText= elements;
+            t.focus();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1ST APPROCH
+      let a = []; //ARRAY DECLARATION
+      document.write(`Data : ${a} <br>`);
+      document.write(`Size : ${a.length} <br>`);
+
+      //DATA ASSIGNMENT
+      a[0] = 10;
+      a[1] = 20;
+      a[2] = 30;
+      document.write(`<hr>`);
+      document.write(`Data : ${a} <br>`);
+      document.write(`Size : ${a.length} <br>`);
+
+      let runs = [9, 9, 9, 9, 4, 3]; //ARRAY INITIALIZATION
+      document.write(`<hr>`);
+      document.write(`Data : ${runs} <br>`);
+      document.write(`Size : ${runs.length} <br>`);
+
+      //IF WANT TO PRINT ONE AFTER ONE BELOW   OVERWISE RUNS
+      document.write(`<hr>`);
+      let total = 0;
+      for (i = 0; i < runs.length; i++) {
+        document.write(`Over ${i + 1} : ${runs[i]} <br>`);
+
+        //IF WANT TOTAL SUM OF ALL ELEMENTS OF ARRAY
+        total = total + runs[i];
+        //total+=runs[i]
+      }
+      document.write(`<hr>`);
+      document.write(`Total Runs: ${total} <br>`);
+      document.write(`Overs: ${runs.length} <br>`);
+      document.write(`Runrate: ${total / runs.length} <br>`);
+      //IF YOU WANT RUNRATE UPTO 2 FRACTIONS ONLY DO
+      //WE CAN TO EITHER WAY
+      //document.write(`Runrate: ${(total / runs.length).toFixed( 2)} <br>`);
+      let avg = total / runs.length;
+      document.write(`Runrate Upto Two Fractions: ${avg.toFixed(2)} `);
+
+    </script>
+  </body>
+</html>

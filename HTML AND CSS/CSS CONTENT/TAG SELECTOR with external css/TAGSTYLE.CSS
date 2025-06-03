@@ -1,0 +1,4 @@
+/* All h1 tags will have same color content */
+h1{
+    color: red;
+}

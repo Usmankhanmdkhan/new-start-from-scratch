@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //SPLICE()
+      //INSERTING  ==> SPLICE(START INDEX ,NO. OF ELE,NEW-ELEMENTS)
+
+      let a = [1, 2, 3, 4];
+      console.log(a); //[1,2,3,4]
+      a.splice(0, 0, 10, 20);
+      console.log(a); //[10,20,1,2,3,4]
+
+      //WE CAN ADD ANT WHERE WE WANT WITHOUT DELETING EXISTING VALUES
+      a.splice(2, 0, 100, 101, 102, 103);
+      console.log(a); //[10, 20,100, 101, 102, 103,1, 2, 3, 4];
+    </script>
+  </body>
+</html>

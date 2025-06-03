@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #head1 {
+        /* background-color: red; */
+        position: absolute; /*neccesory*/
+        animation-name: anime1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        scroll-behavior: smooth;
+      }
+      #head2 {
+        /* background-color: red; */
+        position: absolute; /*neccesory*/
+        animation-name: anime2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+      }
+      #head3 {
+        /* background-color: red; */
+        position: absolute; /*neccesory*/
+        animation: anime3 5s linear 3s infinite alternate; /*in one line*/
+      }
+
+      @keyframes anime1 {
+        from {
+          left: 1px;
+          top: 5px;
+        }
+        to {
+          left: 1300px;
+          top: 5px;
+        }
+      }
+      @keyframes anime2 {
+        from {
+          left: 1px;
+          top: 35px;
+        }
+        to {
+          left: 1300px;
+          top: 35px;
+        }
+      }
+      @keyframes anime3 {
+        from {
+          left: 1px;
+          top: 65px;
+        }
+        to {
+          left: 1300px;
+          top: 65px;
+        }
+      }
+    </style>
+
+    <!-- h2{hello there $}*2 -->
+    <h2 id="head1">hello there 1</h2>
+    <h2 id="head2">hello there 2</h2>
+    <h2 id="head3">hello there 3</h2>
+  </body>
+</html>

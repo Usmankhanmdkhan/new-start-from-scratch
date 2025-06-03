@@ -1,0 +1,12 @@
+caption{
+    font-size: 24px;
+    color:blue;
+}
+th{
+    background-color: red;
+    color: white;
+}
+tr{
+    background-color: yellow ;
+    color: firebrick;
+}

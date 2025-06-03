@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //BELOW IS SPREAD OPERATOR SO IT CONVERTS THE GIVEN ARGUMENTS INTO ARRAY
+      //AND USING BELOW FUNCTION WE CAN ADD NUMBERS
+      const sum = function (...n) {
+        let s = 0;
+        for (let i = 0; i < n.length; i++) {
+          s += n[i];
+        }
+        return s;
+      };
+
+      document.write(`${sum(10, 20, 30)} <br>`);
+      document.write(`${sum(10, 20, 30, 40, 50)}<br>`);
+      document.write(`${sum(100)}`);
+
+    
+    </script>
+  </body>
+</html>

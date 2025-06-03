@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //SPLICE() => USED TO ADD DELETE AND MANPULATE/UPDATE DATA
+      //IT MANUPULATE THE EXISTING ARRAY
+
+      let a = [10, 20, 30, 40, 50, 60, 70];
+      console.log(a); //[10, 20, 30, 40, 50, 60, 70]
+      //USE CTRL+SHIFT+J TO OPEN CONSOLE OF EDGE
+      //DELETING  ==>SPLICE(STARTING INDEX,NO OF ELEMENTS)
+      //STARTING INDEX IS 0 AND NO OF ELEMENTS ARE 2 MEANS IT WILL DELETE 10 AND 20 AND
+      //RETURN REMAINING
+      a.splice(0, 2);
+      console.log(a); //[30, 40, 50, 60, 70]
+
+      //WE CAN STORE THE DELETED ELEMENTS OF PARTICULAR ARRAY INSIDE OTHER ARRAY USING SPLICE
+      let b = [10, 20, 30, 40, 50, 60];
+      console.log(b); //[10, 20, 30, 40, 50, 60]
+      let c = b.splice(0, 3);
+      console.log(c); //DELETED ELEMENTS FROM ARRAY "b" WE STORED IN "c" [10, 20, 30]
+      console.log(b); //REMAINING ELEMENTS AFTER SPLICE [40, 50, 60]
+    </script>
+  </body>
+</html>

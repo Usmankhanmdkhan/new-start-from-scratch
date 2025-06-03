@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //WE CAN TAKE FUNCTION EXPRESSION TOO
+      //FUNCTION WITHOUT REST PARAMETER
+      let sum = (a, b) => a + b;
+      document.write(`SUM IS : ${sum(1, 2)} <br>`); //exacct two parameters give answer
+      document.write(`SUM IS : ${sum(5, 2, 30)} <br>`); //it only counts first two and return answer
+      document.write(`SUM IS : ${sum(1)} <br>`); //less parameter gives NAN=100+undefined
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        color: red;
+      }
+      h3 {
+        text-align: center;
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: aqua;
+        /* text-align: center;  TEXT INSIDE BOX COME CENTER OF DIV*/
+        margin: auto; /*USED TO CENTER ALIGNMENT HORIZONALLY*/
+        border-radius: 15px;
+        box-shadow: 1px 1px 10px red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h3>REGISTRATION FORM</h3>
+      <!--method get shows data in sending url while post method is safe-->
+      <!--ENCRYPT USED FOR SENDIND DATA IN ENCRYPTED WAY WE USE MULTIPART IF DATA CONTAINS VIDEO FILE OR IMAGES
+      OR WE USE TEXT/PLAIN IF IT IS NORMAL REGISTRATION FORM-->
+      <form
+        action="registration.jsp"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <label for="FULL NAME">FULL NAME</label>
+        <br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          required
+          autocomplete="off"
+          autofocus
+        />
+        <span>*</span>
+        <br />
+        <label for="EMAIL ID">EMAIL ID</label>
+        <br />
+        <input type="email" id="email" name="email" required />
+        <span>*</span>
+        <br />
+        <label for="CONTACT NUMBER">CONTACT NUMBER</label>
+        <br />
+        <!-- <input type="number" id="phone" name="phone" /> 
+        if type number it will show up down arrow like step in right side of textbox -->
+        <input type="text" id="phone" name="phone" maxlength="10" required />
+        <span>*</span>
+        <br />
+        <label for="COURSE">COURSE</label>
+        <br />
+        <input type="text" id="course" name="course" required />
+        <span>*</span>
+        <br />
+        <label for="MODE OF TRAINING">MODE OF TRAINING</label>
+        <br />
+        <input list="MODE" id="mot" name="mot" required />
+        <datalist id="MODE">
+          <option value="OFFLINE"></option>
+          <option value="ONLINE"></option>
+        </datalist>
+        <span>*</span>
+        <br />
+        <!-- <input type="submit" value="Submit" >  OR-->
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

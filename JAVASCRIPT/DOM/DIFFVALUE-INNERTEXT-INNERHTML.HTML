@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H3>DEMO ON ELEMENT PRORPERTIES</H3>
+    <H1 id="head1">HELLO</H1>
+    <input type="text" id="tb" name="tb" value="1000">
+    <HR></HR>
+
+    <script>
+
+        //PAIRED TAGS
+        const h=document.getElementById("head1");
+        //IT WAS HELLO
+        //WE CAPTURED H1 TAG IN VARIABLE "h" IN THE FORM OF OBJECT 
+        //TO PRINT WHAT IS WRITTEN INSIDE "h"   WE WROTE h.InnerText
+        document.write(`${h.innerText} <br>`)  ;
+        //HERE WE ARE UPDATING THE DATA
+        //h.innerText="WELCOME";
+
+        
+        //APPENDING OR MODIFYING DATA 
+        // h.innerText=h.innerText+" WELCOME";
+        h.innerText+=" WELCOME"; 
+
+
+        //DELETING DATA
+        // h.innerText=``;
+
+        //WE CANT USE VALUE IN PLACE OF INNERTEXT
+        // document.write(`${h.value} <br>`)   //IT WILL GIVE UNDEFINED
+
+        //UNPAIRED TAGS
+        const inp1=document.getElementById("tb");
+        document.write(`${inp1.value} <br>`)  ; //WE PRINT VALUE INSIDE INPUT TAG HERE
+        
+        //WE CANT USE INNERTEXT IN PLACE OF VALUE
+        //document.write(`${inp1.value} <br>`)  ; //BLANK
+        inp1.value=2000; //MODIFICATION
+        inpt1.value+=`apples`//APPENDING
+        inpt1.value=``;//DELETING
+
+
+        
+
+
+    </script>
+</body>
+</html>

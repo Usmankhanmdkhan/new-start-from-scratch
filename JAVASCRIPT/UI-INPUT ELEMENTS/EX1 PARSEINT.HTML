@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x1, x2, y1, y2, res1, res2;
+
+      x1 = prompt("enter first number"); //it will treat is as string as we are returning values in ""
+      y1 = prompt("enter second number"); //the box in which we are entering values is nothing but an
+      //input tag textbox and datatype of input textbox is string not number.
+      //PARSEINT CONVERTS MODE OF VALUE NOT DATATYPE OF VALUE
+      res1 = x1 + y1;
+      document.write(res1, "<br>");
+      document.write("<hr>");
+      
+      //OR WE CAN WRITE IT AS  WRITING WINDOWS BEFORE PARSEINT IS OPTIONAL
+      //WE CAN TAKE NEGATIVE INTEGERS TOO IN PROMPT BOX
+      //PARSEINT WILL NOT ACCEPT VALUES AFTER DECIMAL(.) 
+      let res3=window.parseInt(x1)+window.parseInt(y1)
+      document.write("SUM IS ",res3,"<br>");
+      document.write("<hr>");
+      
+      //to avoid it we need to do parseint or write + before prompt it will work fine
+      x2 = parseInt(prompt("enter first number"));
+      y2 = +prompt("enter second number");
+      res2 = x2 + y2;
+      document.write(res2);
+
+    </script>
+  </body>
+</html>
+

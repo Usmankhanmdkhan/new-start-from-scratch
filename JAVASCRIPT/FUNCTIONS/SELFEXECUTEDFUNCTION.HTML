@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn1" type="button">CALL</button>
+    <br />
+    <button id="btn2" type="button">CALLBACK</button>
+    <script>
+      //IT IS NOTHING BUT EXPRESSIONAL FUNCTION AT THERE IS NO NAME OF FUNCTION
+      // HERE WE ARE NOT ALLOCATION MEMORY TO FUNCTION DIRECT CALLING IT
+      // WE ARE NOT CALLING THE FUNCTION IT IS CALLING ITSELF AUTOMATICALLY WHEN BUTTON IS CLICKED
+      //HERE WE INSTANTLY DEVELOPED FUNCTION
+      document.getElementById("btn1").onclick = function () {
+        alert(`self execution completed`);
+      };
+
+      //IF WE DO IT BY ADDEVENTLISTENER THEN THIS FUCNTIONBECOMES CALL BACK FUNCTION
+      //WE ARE PASSING FUNCTION AS A PARAMETER TO EVENTLISTENER
+      //HERE WE USED IT AS CALLBACK
+      document.getElementById("btn2").addEventListener(`click`, function () {
+        alert(`self execution completed by callback button`);
+      });
+    </script>
+  </body>
+</html>

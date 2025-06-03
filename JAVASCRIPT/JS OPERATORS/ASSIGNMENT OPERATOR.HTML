@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //ASSIGNMENT OPERATOR "="
+      let y = 10; //this is an assignment operator "="
+
+      //SHORTHAND COMB OF ARTHEMETIC+ASSIGN , BITWISE+ASSIGN
+
+      document.write((y += 20), "<br>"); //30 "y=y+20=30"
+      document.write(y, "<br>"); //30
+
+      document.write((y /= 10), "<br>"); //3  "y=y/10=3"
+      document.write(y, "<br>"); //3
+
+      document.write((y *= 10), "<br>"); //30 "y=y*10=30"
+      document.write(y, "<br>"); //30
+
+      document.write((y -= 10), "<br>"); //20 "y=y-10=20"
+      document.write(y, "<br>"); //20
+
+      //CONCATE   "+"
+      //A+B HERE A AND B ARE OPERANDS + IS OPERATOR
+      //IF BOTH A AND B ARE NUMBERS IT WILL DO ADDITION
+      //IF BOTH ARE STRINGS IT WILL PERFORM CONCATINATION
+      //IF ONE OPERAND IS NUMBER AND OTHER IS STRING IT WILL PERFORM CONCAT
+
+      document.write("Usman" + 786, "<br>"); //Usman786 //Concat operation
+      document.write("Usman" + "Khan", "<br>"); //UsmanKhan  //Concat operation
+      document.write("Usman " + "Khan", "<br>"); //Usman Khan  //Concat operation
+      //if need only one space
+      document.write("Usman" + "&nbsp &nbsp &nbsp" + "Khan", "<br>"); //Usman   Khan//Concat operation
+      //if need more than one space above we took 3 spaces
+
+      let a=100;
+      document.write("X value is :" + a ,"<br>") //X value is: 100
+      document.write(a+true,"<br>");  //101  true counts 1 false counts 0
+
+      //BITWISE OPERATORS PERFORM LOGICAL OPERATIONS IN THE MODE OF BINARY CODE THIS OPERATORS
+      //<< >> & | ~ ^
+
+      //UNARY OPERATORS
+      //INCREAMENT DECREAMENT OPERATORS
+      //++ --
+      //++ CURRENT VALUE +1
+      //-- CURRENT VALUE -1
+      //TIMING OF INCREMENT
+      //VAR++ POST INCREMENTATION  ++VAR PRE INCREMENTATION
+      //VAR-- POST DECREAMENTATION  --VAR PRE DECREAMENTATION
+
+      //EXAMPLE
+      let b=20;
+      b++;
+      document.write(b,"<br>");
+      let c=20;
+      c++;
+      document.write(c,"<br>");
+    </script>
+  </body>
+</html>

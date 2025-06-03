@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <output id="res1"></output><br />
+    <output id="res2"></output><br />
+    <hr />
+
+    <script>
+      //SAME RESULT FOR INNERTEXT AND INNERHTML IF WE JUST WANT TO PRINT THE
+      //AMOUNT IN OUPUT BUT IF WE WANT TO ADD SOME HTML THINGS IT WOULD BE DIFFERENT
+      //IF WE WANT TO DISPLAY HTML CONTENT WITH VARIABLE RESULT USE INNERHTML
+      const op1 = document.getElementById("res1");
+      const op2 = document.getElementById("res2");
+      let p = prompt(`enter amount`);
+
+      op1.innerText = `AMOUNT IS  <strong>&#8377; ${p}</strong>`; //AMOUNT IS <strong>&#8377; 5486</strong>
+
+      op2.innerHTML = `AMOUNT IS  <strong>&#8377; ${p} </strong>`; //AMOUNT IS ₹ 5486
+
+      //TAGNAME
+      //WE CAN SEE THIS TAG NAME PROPERTY ONLY WHEN WE CALL ANY ONE HTML ELEMENT NOT COLLECTION
+      //FOR EXAMPLE CALL BY ID,QUERY SELECTOR.
+      document.write(`${op1.tagName}`);
+    </script>
+  </body>
+</html>

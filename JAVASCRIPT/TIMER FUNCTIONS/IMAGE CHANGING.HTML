@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="./208440.gif" alt="" width="600px" height="400px" />
+    <script>
+      let images = [
+        `208440.gif`,
+        `328899.jpg`,
+        `644154.jpg`,
+        `769871.jpg`,
+        `966242.jpg`,
+      ];
+      let index = 1;
+
+      function chgimg() {
+        if (index >= images.length) {
+          index = 0;
+        }
+        const im = document.querySelector(`img`);
+        im.src = images[index];
+        index++;
+      }
+
+      window.setInterval(chgimg, 3000);
+    </script>
+  </body>
+</html>

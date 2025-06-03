@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="text-align: center;">
+      <h2>ARITHEMETIC CALCULATION</h2>
+
+      <!--here we typed input#inp$*3-->
+      <input type="text" id="inp1" autofocus />
+      <br />
+      <br />
+      <input type="text" id="inp2" />
+      <br />
+      <br />
+      <input type="text" id="inp3" readonly />
+      <br /><br />
+      <button value="Add"onclick="inp3.value=(parseInt(inp1.value)+parseInt(inp2.value))">Add</button>
+      <button value="Sub"onclick="inp3.value=inp1.value-inp2.value">Sub</button>
+      <button value="Mul"onclick="inp3.value=inp1.value*inp2.value">Mul</button>
+      <button value="Div"onclick="inp3.value=inp1.value/inp2.value">Div</button>
+      <button value="Mod"onclick="inp3.value=inp1.value%inp2.value">Mod</button>
+      <button value="Pow"onclick="inp3.value=inp1.value**inp2.value">Pow</button>
+    </div>
+  </body>
+</html>

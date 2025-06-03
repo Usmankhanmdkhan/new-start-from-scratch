@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 6px;
+}
+    
+
+.div1 {
+    background-color: blue;
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+}
+
+.div2 {
+    background-color: brown;
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+}
+
+.div3 {
+    background-color: green;
+    grid-row: span 3 / span 3;
+    grid-row-start: 3;
+}
+
+.div4 {
+    background-color: aqua;
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-row-start: 3;
+}
+
+.div5 {
+    background-color: yellow;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 3;
+}
+        
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="div1">
+        <img src="../../../../../../Downloads/1-.jpg" alt="" width="300px" height="500px">
+      </div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+      <div class="div5"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        margin-top: 20px;
+        position: absolute; /*it is necessory*/
+        height: 60px;
+        width: 60px;
+        animation-name: smily;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes smily {
+        0% {
+          left: 5px;
+          top: 5px;
+        }
+        100% {
+          left: 1450px;
+          top: 5px;
+          transform: rotateZ(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./th (1).jpg" alt="" />
+  </body>
+</html>

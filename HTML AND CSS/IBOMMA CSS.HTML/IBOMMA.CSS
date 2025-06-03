@@ -1,0 +1,35 @@
+body {
+  background-color: #444444;
+}
+#maindiv {
+  display: grid;
+  /* no responsiveness horizontal scroll bar will apper if browser size reduced*/
+  /* grid-template-columns: auto auto auto auto; */
+  /*Responsive design no scroll bar horizontal*/
+  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  grid-gap: 25px;
+}
+
+#maindiv div {
+    border: 2px solid yellow;
+    box-shadow: 1px 1px 10px 0px red;
+    height: 350px;
+    border-radius: 10px;
+}
+
+img{
+     /*Responsive design using %*/
+    width: 100%;  /*image will have same width as column*/
+    height: 80%;
+    border-radius: 15px;
+}
+
+a{
+    color: chartreuse ;
+    font-size:20px ;
+    text-decoration: none;  /* to remove underline under anchor tag*/
+}
+span{
+    font-size: 18px;
+    color: cyan;
+}

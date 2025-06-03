@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #hh3 {
+        color: green;
+      }
+      #hh2 {
+        color: yellow;
+      }
+      #hh1 {
+        color: red;
+      }
+      #p1{
+        color: fuchsia;
+      }
+    </style>
+  </head>
+  <body>
+    <!--we can give one id to one tag only it is a programing principle to use id selector
+        we cant give 2 ids to one html tags one tag one id only-->
+    <h1 id="hh3">web page</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+      magni odit quis ex beatae ratione quas sunt, dolorem sapiente corrupti
+      veritatis nobis quidem blanditiis culpa. Sint aperiam enim rerum ipsam.
+    </p>
+    <div>gap</div>
+    <br />
+    <h1 id="hh2">web page</h1>
+    <div>
+      <h1 id="hh1">web page</h1>
+      <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        magni odit quis ex beatae ratione quas sunt, dolorem sapiente corrupti
+        veritatis nobis quidem blanditiis culpa. Sint aperiam enim rerum ipsam.
+      </p>
+    </div>
+
+    <!--invalid coding-->
+
+    <p id="hh1">
+      <!--cant use one id at two tags hh1 is already used in above h1 tag-->
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni,
+      doloremque accusantium quo mollitia nam ratione ex perferendis sequi id,
+      quibusdam neque ipsum. Dolor beatae enim debitis repudiandae, impedit
+      delectus ea.
+    </p>
+    <!--cant use to ids at one tag-->
+    <h1 id="hh1 hh2">hello word</h1>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn1" type="button">CALL</button>
+    <br />
+    <button id="btn2" type="button">CALLBACK</button>
+    <br>
+    <br>    
+    <script>
+      //IN ARROW FUNCTION WE CAN REDUCE THE CODE AVOIDIND RETURN AND {} AND ()
+      //SUM OF N NATURAL NUMBERS
+      // const sum=(n)=>{return n*(n-1)/2};
+      const sum = (n) => (n * (n - 1)) / 2;
+
+      //AREA OF CIRCLE
+      // const area=(r)=>{return Math.PI*r**2};
+      const area = (r) => Math.PI * r ** 2;
+
+      //HERE WE ARE CALLING FUNCTION area(5) AND STORING RETURNING VALUE TO res AND
+      //DISPLAYING res value
+      let res = area(5);
+      document.write(`AREA OF CIRCLE = ${res} <br>`);
+      document.write(`SUM OF 11 NATURAL NUMBERS = ${sum(11)}`);
+
+      //PART TWO
+      //CONVERTED EXPRESSIONAL FUNCTION TO ARROW
+
+      //IT IS NOTHING BUT EXPRESSIONAL FUNCTION AT THERE IS NO NAME OF FUNCTION
+      // HERE WE ARE NOT ALLOCATION MEMORY TO FUNCTION DIRECT CALLING IT
+      // WE ARE NOT CALLING THE FUNCTION IT IS CALLING ITSELF AUTOMATICALLY WHEN BUTTON IS CLICKED
+      //HERE WE INSTANTLY DEVELOPED FUNCTION
+      document.getElementById("btn1").onclick =()=>alert(`self execution completed`);
+
+      //IF WE DO IT BY ADDEVENTLISTENER THEN THIS FUCNTIONBECOMES CALL BACK FUNCTION
+      //WE ARE PASSING FUNCTION AS A PARAMETER TO EVENTLISTENER
+      //HERE WE USED IT AS CALLBACK
+      document.getElementById("btn2").addEventListener(`click`,()=>alert(`self execution completed by callback button`));
+    </script>
+  </body>
+</html>

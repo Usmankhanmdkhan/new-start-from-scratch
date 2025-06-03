@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //BELOW FUCNTION IS CALLED AFTER 3 SEC
+      window.setTimeout(function () {
+        alert(`hey there`);
+      }, 3000);
+
+      //BELOW FUCNTION IS CALLED AFTER 7 SEC
+      function fun() {
+        document.write(`hey i am called by settime out`);
+      }
+      window.setTimeout(fun, 7000);
+    </script>
+  </body>
+</html>

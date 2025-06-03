@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- table>(caption>h3{STUDENT MARK REPORT})+(tr>(td>label)+(td>input#INP$))*7 -->
+
+    <table align="center" style="background-color: aqua">
+      <caption>
+        <h3>STUDENT MARK REPORT</h3>
+      </caption>
+      <tr>
+        <td><label for="">STUDENT NAME</label></td>
+        <td><input type="text" id="name" /></td>
+      </tr>
+      <tr>
+        <td><label for="">ROLL NO.</label></td>
+        <td><input type="text" id="roll no" /></td>
+      </tr>
+      <tr>
+        <td colspan="2"><label for="">MARKS IN</label></td>
+      </tr>
+      <tr>
+        <td><label for="">HTML</label></td>
+        <td><input type="text" id="html" maxlength="3" /></td>
+      </tr>
+      <tr>
+        <td><label for="">CSS</label></td>
+        <td><input type="text" id="css" maxlength="3" /></td>
+      </tr>
+      <tr>
+        <td><label for="">JS</label></td>
+        <td><input type="text" id="js" maxlength="3" /></td>
+      </tr>
+      <tr>
+        <td><label for="">BOOTSTRAP</label></td>
+        <td><input type="text" id="bootstrap" maxlength="3" /></td>
+      </tr>
+      <!-- (tr>td>input:btn)+tr>td>output+br*3 -->
+      <tr align="center">
+        <td colspan="2"><input type="button" value="Get Result" onclick="getResult()" /></td>
+      </tr>
+      <tr align="center">
+        <td colspan="2">
+          <output id="total"></output><br>
+          <output id="avarage"></output><br>
+          <output id="grade"></output><br>
+        </td>
+      </tr>
+    </table>
+    <script>
+
+        function getResult(){
+            //LOCAL VARIABLES
+            let hm,cm,jm,bm,tot,avg,grd;
+            
+            //DATA COLLECTION FROM UI
+            //PARSEINT I.E. + SIGN IS NECCESORY OR ELSE PROGRAM WILL DO 
+            //CONCATINATION NOT CALCULATION
+            hm=+html.value;
+            cm=+css.value;
+            jm=+js.value;
+            bm=+bootstrap.value;
+
+            //CALCULATIONS
+            tot=hm+cm+jm+bm;
+            avg=tot/4;
+
+            total.value= "Total Marks : "+tot;
+            avarage.value="Avarage Marks: "+avg;
+
+            //IT IS NESTED IF YOU WROTE FIRST IF BLOCK IF CONDITION SATISFIED THEN 
+            //IT WILL ENTER INTO IF ELSE STATEMENT INSIDE ORELSE IT WILL GIVE
+            //ELSE STATEMENT OF FIRST IF BLOCK
+            //CHECK PASS OR FAIL AND ON BEHALF OF THAT GIVE GRADE
+            if(hm>39&&cm>39&&jm>39&&bm>39){
+                //FINDING GRADE
+                if(avg>=90){
+                    grd="A+";
+                }
+                else if(avg>=80){
+                    grd="A";
+                }
+                else if(avg>=70){
+                    grd="B+";
+                }
+                else if(avg>=60){
+                    grd="B";
+                }
+                else if(avg>=50){
+                    grd="C";
+                }
+                else grd="D";
+            }
+            else{
+                grd="FAIL";
+            }
+            grade.value="Grade : "+grd;
+        }
+
+        
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //LOOK WHO IS HOISTED
+      //   fun1();
+      //   fun2();
+
+      //GENERAL FUNCTION/DECLARATION FUNCTION => GENERAL PURPOSE REUSE
+      //A function declaration must have a function name.
+      //Function declaration does not require a variable assignment.
+      //These are executed before any other code.
+      //The function in function declaration can be accessed before and after the function definition.
+      //Function declarations are hoisted
+
+      function fun1() {
+        document.write(`fun1 <br>`);
+      }
+
+      //FUNCTION EXPRESSION FUNCTION STORED IN A VARIABLE INSTANT DEVELOPED CALL BACK
+      //A function expression is similar to a function declaration without the function name.
+      //Function expressions can be stored in a variable assignment.
+      //Function expressions load and execute only when the program interpreter reaches the line of code.
+      //The function in function expression can be accessed only after the function definition.
+      //Function expressions are not hoisted
+
+      const fun2 = function () {
+        document.write(`fun2 <br>`);
+      };
+
+      //ARROW FUNCTION
+      const fun3 = () => {
+        document.write(`fun3 <br>`);
+      };
+
+      fun1();
+      fun2();
+      fun3();
+    </script>
+  </body>
+</html>

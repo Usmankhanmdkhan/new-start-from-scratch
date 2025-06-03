@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main">
+      <input type="button" value="ADDIMAGE" onclick="addimg()" />
+    </div>
+
+    <script>
+      function addimg() {
+        const i = document.createElement("img");
+        i.src = "../../../../Downloads/1-.jpg";
+        i.style.width = "300px";
+        i.style.height = "300px";
+        document.getElementById("main").appendChild(i);
+      }
+    </script>
+  </body>
+</html>

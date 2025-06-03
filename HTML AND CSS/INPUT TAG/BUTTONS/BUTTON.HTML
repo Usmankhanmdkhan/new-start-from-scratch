@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>FORM TO BE SUBMITTTED</h3>
+    <form action="action.php">
+      <label for="">NAME</label>
+      <br />
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        autofocus
+        autocomplete="on"
+        required
+      />
+      <br />
+      <label for="">NUMBER</label>
+      <br />
+      <input
+        type="text"
+        id="phone"
+        name="phone"
+        autocomplete="on"
+        required
+        maxlength="10"
+      />
+      <br />
+      <label for="">COURSE</label>
+      <br />
+      <input type="text" id="course" name="course" autocomplete="on" required />
+      <br />
+      <label for="">MODE OF TRAINING</label>
+      <br />
+      <input type="text" list="MODE" id="mod" name="mod" required />
+      <!--here we require to give id name to datalist and that id name should be the list name
+      in input dont use same list name and id/name in input tag-->
+      <datalist id="MODE">
+        <option value="online"></option>
+        <option value="offline"></option>
+      </datalist>
+      <br />
+      <!--reset button should be used in same for and it is used to clear the input fields 
+      before submitting-->
+      <input type="reset" name="reset" id="reset" />
+      <!--SUBMIT USED TO INFORM BROWSER THAT WHEN IT IS CLICKED IT IS THE TIME TO SEND THE 
+      DATA TO THE DESTINATION RETURN IN THE FORM TAG IN ACTION ATTRIBUTE EX: ACTION.JSP -->
+      <input type="submit" name="submit" id="submit" />
+    </form>
+  </body>
+</html>

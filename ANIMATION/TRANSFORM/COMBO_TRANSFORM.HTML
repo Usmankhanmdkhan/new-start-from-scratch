@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRANSFORM</title>
+
+    <style>
+      img{
+        transition: transform 2s;
+        display: block;
+        margin: auto;
+        width: 150px;
+        height: 150px;
+      }
+      #img1:hover {
+        transform: rotate(360deg) scale(1.5);
+      }
+      #img2:hover {
+        transform: rotate(360deg) skew(150deg);
+      }
+
+
+      .menu{
+        transition: transform 3s;
+      }
+      .menu:hover{
+        transform: rotate(360deg) scale(1.1);
+      }
+
+      #div-menu{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 40px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 style="text-align:center">Usmankhan</h1>
+      <img id="img1" src="./OIP (3).jpg" alt="" />
+
+      <br /><b><br /><br /><br /><br /></b>
+
+      <h1 style="text-align: center">Usmankhan</h1>
+      <img id="img2" src="./OIP (3).jpg" alt="" />
+    </div>
+
+    <br /><br />
+    <br /><br />
+<div id="div-menu">
+    <img class="menu" src="../../HTML AND CSS/IBOMMA CSS.HTML/OIP (1).jpg" alt="" />
+    <img class="menu" src="../../HTML AND CSS/IBOMMA CSS.HTML/OIP (2).jpg" alt="" />
+    <img class="menu" src="../../HTML AND CSS/IBOMMA CSS.HTML/OIP (3).jpg" alt="" />
+    <img class="menu" src="../../HTML AND CSS/IBOMMA CSS.HTML/OIP (4).jpg" alt="" />   
+</div>
+  </body>
+</html>

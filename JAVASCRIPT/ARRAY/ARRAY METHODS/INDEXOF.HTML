@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //INDEXOF()=> IT FINDS THE INDEX OF VALUE WE ARE SEARCHING IN ARRAY
+      //AUTOMATICALLY IT STARTS SEARCH FROM INDEX 0 TILL END
+      //IF THERE ARE MORE THAN ONE ELEMENTS FOUND OF SAME VALUE IT RETURNS FIRST OCCURANCE
+      //THERE ARE THREE POSIBILITIES
+      //BELOW THERE ARE  THREE 10S BUT IT RETURN INDEX 0 BECOZ ITS FIRSTLY AT 0 INDEX
+      let a = [10, 20, 10, 30, 40, 50, 10, 60, 70, 80];
+      //IF VALUE FOUND IN ARRAY IT RETURNS ITS INDEX
+      console.log(a.indexOf(10));
+      //IF VALUE NOT FOUND IN ARRAY IT RETURN -1
+      console.log(a.indexOf(100));
+      
+      //WE CAN FIND VALUE AFTER PARTICULAR INDEX BY ADDING SECOND ARGUMENT
+      //IT MEANS FIND VALUE 10 AFTER 3RD INDEX OF ARRAY
+      //IT RETURNS INDEX 6
+      console.log(a.indexOf(10,3));
+
+    </script>
+  </body>
+</html>

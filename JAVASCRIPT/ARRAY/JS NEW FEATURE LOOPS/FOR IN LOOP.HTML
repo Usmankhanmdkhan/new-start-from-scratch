@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <h3>HTML</h3>
+    <h3>CASCADING STYLE SHEET</h3>
+    <h3>JAVASCRIPT</h3>
+    <h3>REACT</h3>
+    <h3>WEB SERVICES</h3>
+
+    <script>
+      const elements = document.getElementsByTagName(`h3`);
+      document.write(elements, `<br> <hr>`);
+      for (i in elements) {
+        //document.write(`${elements[i]}} <br>`);
+        //TO PRINT INDEX
+        //document.write(`${[i]}} <br>`);
+        elements[i].style.backgroundColor = `green`;
+      }
+    </script>
+  </body>
+</html>

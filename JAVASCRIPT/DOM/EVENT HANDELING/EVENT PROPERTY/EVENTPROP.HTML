@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--IT IS BETTER TO WRITE FUNCTION BEFORE HTML-->
+    <script>
+      function fun1() {
+        alert(`hey you pushed me`);
+      }
+      function fun2() {
+        alert(`hey you pulled me`);
+      }
+    </script>
+  </head>
+  <body>
+    <h3>demo on event listener</h3>
+    <input type="button" id="btn1" value="PUSH"/>
+    <input type="button" id="btn2" value="PULL"/>
+
+    <script>
+      const b1 = document.getElementById("btn1");
+      b1.onclick=fun1;
+      
+      const b2 = document.getElementById("btn2");
+      b2.onclick=fun2;
+
+      
+    </script>
+  </body>
+</html>

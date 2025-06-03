@@ -1,0 +1,51 @@
+#div-left {
+  float: left;
+}
+#div-right {
+  float: right;
+}
+header {
+  background-color: #3a3a03;
+  color: #fff;
+  font-size: 20px;
+  /* width: 100%; 
+   IF WE USED IT IN IT WE WILL SEE A H-SCROLL BAR BCOZ IT WILL LET HAEDER
+   TAKE THE 100% WIDTH OF WEB PAGE AS MUSCH AS IT WANTS */
+
+  /* WE APPLIED PADDING INSIDE HEADER SO IT WOULD TAKE PLACE INSIDE BOX ONLY */
+  padding-left: 250px;
+  padding-right: 150px;
+}
+
+nav {
+  height: 20px;
+  background-color: rgb(255, 0, 136);
+  padding: 0px;
+  text-align: center;
+}
+nav a {
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  font: 24px;
+  /* background-color: red; */
+  /* INLINE BLOCK LET ANCHOR TAG TAKE THE WIDTH WE ARE GIVING TO IT */
+  /* NO NEED OF PADDING IF WE APPLY BELOW TO PROPERTIES */
+  display: inline-block;
+  width: 120px;
+  /* BLOCK WILL SHOW ANCHOR TAGS IN BLOCK LEVEL */
+  /* display: block; */
+
+  /* WE CAN DO FOLLOWING BUT MORE EFFICIENT WAY IS ABOVE ONE */
+  /* padding-right: 20px;
+  padding-left: 20px; */
+  /* background-color: aqua; */
+
+  transition: transform 2s;
+}
+
+nav a:hover {
+  background-color: chartreuse;
+  color: crimson;
+  transform:scale(0.7);
+}

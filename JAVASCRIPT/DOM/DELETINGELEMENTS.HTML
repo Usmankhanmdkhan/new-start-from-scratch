@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="c">js</h1>
+    <h2 class="c">html</h2>
+    <h2 class="c">css</h2>
+    <input type="button" value="delete" onclick="remove()" />
+
+    <!--DELETE ELEMENT ONE AFTER ONE HERE AS WE CALLING WITH QUERY SELECTOR WITH ".c" CLASS NAME
+    IT RETURNS FIRST ELEMENT WITH "c" CLASS IT GETS DELETED THEN SAME THING DONE WITH NEXT "c" CLASS
+    ELEMENT-->
+    <script>
+      function remove() {
+        const elements = document.querySelector(".c").remove();
+      }
+    </script>
+  </body>
+</html>

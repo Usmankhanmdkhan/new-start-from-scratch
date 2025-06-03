@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="hh">hello</h1>
+    <input
+      type="color"
+      name="color"
+      id="c"
+      onchange="document.getElementById('hh').style.color=c.value"
+    />
+    
+    <input type="color" name="color" id="c2" onchange="changecolor()" />
+    <script>
+      function changecolor() {
+        const b = document.querySelector("body");
+        b.style.backgroundColor = c2.value;
+      }
+    </script>
+  </body>
+</html>

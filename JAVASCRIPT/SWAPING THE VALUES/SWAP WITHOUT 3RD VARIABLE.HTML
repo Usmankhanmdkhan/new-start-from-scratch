@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = +prompt("enter a first number");
+      let y = +prompt("enter a second number");
+
+      document.write("value of x: ", x, "<br>");
+      document.write("value of y: ", y, "<br>");
+
+      //let swap without using 3rd variable by addition
+      x = x + y;
+      y = x - y;
+      x = x - y;
+
+      document.write("value of x: ", x, "<br>");
+      document.write("value of y: ", y, "<br>");
+
+      //lets swap without using 3rd variable by multiplication
+      x = x * y;
+      y = x / y;
+      x = x / y;
+      document.write("value of x: ", x, "<br>");
+      document.write("value of y: ", y, "<br>");
+
+      [x, y] = [y, x];
+      document.write("value of x: ", x, "<br>");
+      document.write("value of y: ", y, "<br>");
+    </script>
+  </body>
+</html>

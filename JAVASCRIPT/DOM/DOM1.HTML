@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="tb1" name="tf1" /> <br />
+    <!-- ALL THE CHECKBOXES AND RADIO BUTTONS NAME SHOULD BE SAME ITS A RULE -->
+    <input type="checkbox" name="cb" id="cb1" /><label>RED</label> &nbsp;
+    <input type="checkbox" name="cb" id="cb2" /><label>GREEN</label> &nbsp;
+    <input type="checkbox" name="cb" id="cb3" /><label>YELLOW</label> &nbsp;
+<BR><BR></BR></BR>
+    <!-- NAMES SHOULD BE SAME -->
+    <input type="radio" name="cb" id="rd1" /><label for="rd1">RED</label> &nbsp;
+    <input type="radio" name="cb" id="rd2" /><label for="rd2">GREEN</label> &nbsp;
+    <input type="radio" name="cb" id="rd3" /><label for="rd3">YELLOW</label> &nbsp;
+    <br>
+    <br>
+    <hr>
+    <br>
+    <hr>
+    <h1>hii</h1>
+    <br>
+    <h1>hello</h1>
+    <br>
+    <h1>hey</h1>
+    <br>
+    
+    <!-- span.cc+h2.cc -->
+    <span class="cc"></span>
+    <h2 class="cc"></h2>
+
+    <hr>
+
+    <h2 class="cls">banana</h2>
+    <h2 class="cls">orange</h2>
+    <h2 class="cls">grapes</h2>
+    <img src="" alt="" id="img1">
+
+    <hr>
+    <script>
+        //USING CONST FOR CREATING REFERENCE VARIABLES OR NONPRIMITIVE DATATYPE IS GOOD
+        //REFERENCES OF VARIBALES ARE STORED IN STACK AREA AND 
+        //HEAP AREA OBJECTS AND ARRAYS ARE CREATED
+
+        const t=document.getElementById("tb1");
+        //WHAT WE DO IS CRAETE A REFERENCE VARIABLE FOR A HTML TAG 
+        //WHICH IS STORED IN DOM 
+        //NOTE WE DONT KNOW WITH WHICH NAME THE DOM CREATING THAT OBJECT WE ARE WRITTING 
+        //FOR EXAMPLE INPUT==>HTMLINPUTELEMENT
+        //CREATING NEW ELEMENT WITH REFERENCE object FOR IT OBJ=NEW HTMLINPUTELEMENT()
+        //IT AS OBJ HERE.
+        //INITIALISING OBJ WITH ALL DETAILS OF INPUT TAG(ATT & DATA)
+        //RETURN OBJ TO DOM
+        //AND THIS OBJ WILL BE SHOWN AS INPUT TAG ON WEB PAGE NOW
+
+        //NOW ABOVE CODE WE CREATED A NEW INPUT TAG WITH SAME ATTRIBUTES NOW IF WE PRINT IT 
+        //ON WEBPAGE IT WILL RETURN HTMLINPUTELEMENT
+      
+        document.write(`${t}<br>`);
+        //HERE IT IS PRINTING THAT IT CREATED AN INPUT OBJECT
+        //IF I GO TO CONSOLE AND RIGHT "t" AND ENTER I CAN SEE THIS TAG
+
+        const c=document.getElementsByName("cb");
+        //NOW IT WILL RETURN 3 OBJECTS OR COLLECTION OF THIS THREE OBJECTS
+        document.write(`${c} <br>`);
+        //TYPE c IN CONSOLE AND ENTER
+
+        const h=document.getElementsByTagName("h1");
+        document.write(`${h} <br>`);
+        document.write(`${h} <br>`);
+        //TYPE h IN CONSOLE AND ENTER
+
+        const sp=document.getElementsByClassName("sp");
+        document.write(`${sp} <br>`);
+        //TYPE sp IN CONSOLE AND ENTER
+
+        //IT WILL RETURN ONLY FIRST ELEMENT OF  SAME CLASS
+        const ob=document.querySelector(".cls");
+        document.write(`${ob} <br>`);    
+
+
+        //IT WILL RETURN COLLECTION OF ELEMENT OF SAME CLASS
+        const ob2=document.querySelectorAll(".cls");
+        document.write(`${ob2}<br>`);
+
+        //DOING SAME WITH ID QUERYSELECTOR  
+        const ob3=document.querySelector("#img1");
+        document.write(`${ob3}<br>`);
+
+
+    </script>
+  </body>
+</html>

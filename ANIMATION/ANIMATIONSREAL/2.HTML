@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .c1 {
+        text-align: center;
+        animation-name: anime1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;  /*alternate gives smooth effect*/
+      }
+
+      @keyframes anime1 {
+        from {
+          background-color: blueviolet;
+        }
+        to {
+          background-color: cadetblue;
+        }
+      }
+
+      #btn:hover {
+        background-color: red;  /*if this doest did it will not work*/
+        animation-name: animebtn;
+        animation-duration: 3s;
+      }
+
+      @keyframes animebtn {
+        from {
+          color: aqua;
+          background-color: red;
+        }
+        to {
+            color: blue;
+          background-color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="c1">HELLO WORLD</h1>
+    <h3 class="c1">WELCOME</h3>
+    <br /><br /><br /><br /><br /><br />
+    <input type="button" id="btn" name="button" value="SUBMIT" />
+  </body>
+</html>

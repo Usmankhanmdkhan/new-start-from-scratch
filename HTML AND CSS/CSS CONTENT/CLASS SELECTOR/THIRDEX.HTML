@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .t1 {
+      color: red;
+    }
+    .t2 {
+      background-color: blue;
+    }
+    .t3 {
+      text-align: center;
+    }
+    .t4 {
+      color: gold;
+    }
+  </style>
+  <!--USING NUMBER OF CLASS SELECTORS FOR A SAME TAGS IS POSSIBLE-->
+  <body>
+    <h1 class="t1">hey there</h1>
+    <p class="t1 t2">hey there</p>
+    <h2 class="t1 t2 t3">hey there</h2>
+    <p class="t1 t3">hey there</p>
+    <br />
+    <div>
+      <p>lets do this</p>
+      <h1>lets do this</h1>
+      <span class="t1 t2 t3"> lets do this</span>
+      <!--HERE WE REPEATED SAME PROPERTY COLOR IN  TWO CLASSES, HENCE BROWSER WILL OVERLAP IT AND FINALLY T4 WILL BE APPLLIED -->
+      <!--HERE WE ARE OVERLAPPING GOLD COLOR ON RED COLOR HENCE GOLD COLOR WILL BE SHOWN AS PER CSS STYLING ORDER-->
+      <p class="t4 t1">lets do this</p>
+    </div>
+  </body>
+</html>

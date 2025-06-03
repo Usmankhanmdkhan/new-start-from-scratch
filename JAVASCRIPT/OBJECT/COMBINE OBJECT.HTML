@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //GLOBAL DECLARATION INSENSE "total" HAS TO BE DECLARE GLOBALLY NOT INSIDE OBJECT OR
+      //INSIDE A BLOCK (FUNCTION/IF STATEMENT)
+      //NO GLOBAL VARIABLE TOTAL IS THERE
+      //BUT "total" IS PRESENT INSIDE AN OBJECT THAT WE NEED TO INFORM TO COMPILER
+      const stu = {
+        rno: 1,
+        name: "Usman",
+        total: 450,
+        getresult() {
+          //LOCAL  NO LOCAL VARIABLE IS THERE TOO
+          //SO HERE IS A SEARCH POLICY PROBLEM TO OVERCOME IT WE USE "this.total" OR "stu.total"
+          //IN PROGRAMMING LANGUAGES WE USE "this" ONLY EXCEPTION FOR JAVASCRIPT
+          if (this.total >= 400) return "PASS";
+          else return "FAIL";
+        },
+      };
+
+      document.write(`ROLL NO  :${stu.rno} <br>`);
+      document.write(`NAME  :${stu.name} <br>`);
+      document.write(`TOTAL  :${stu.total} <br>`);
+      document.write(`RESULT  :${stu.getresult()} <br>`);
+    </script>
+  </body>
+</html>

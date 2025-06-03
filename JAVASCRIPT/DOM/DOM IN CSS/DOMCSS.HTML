@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hii</h1>
+    <button value="red" onclick="red()">red</button>
+    <button value="blue" onclick="blue()">blue</button>
+    <script>
+      function red() {
+        const h = document.querySelector("h1");
+        h.style.color = `red`;
+      }
+      function blue() {
+        const h = document.querySelector("h1");
+        h.style.color = `blue`;
+      }
+    </script>
+  </body>
+</html>

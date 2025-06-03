@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //JOIN() ==> WHEN WE CALLED document.write(a) AN ARRAY IN BACKGROUND JOIN METHOD GET CALLED
+      //WE CAN PRINT ARRAY WITH DELIMITOR WE WANT EXAMPLE WE WRITE ARRAY WITH "," DELIMITOR BET 2 VALUES
+      //WE CAN JOIN THEM WITH WHAT WE WANT
+
+      let a = [10, 20, 30];
+      document.write(a + "<br>");
+      document.write(`${a.join(",")} <br>`);
+      //ABOVE BOTH GIVES SAME OUTPUT
+
+      //HERE WE ARE USING "-" DELIMITOR
+      document.write(`${a.join("-")} <br>`);
+
+      //HERE WE ARE USING " " SPACE DELIMITOR
+      document.write(`${a.join(" ")} <br>`);
+
+      //HERE WE ARE USING " &NBSP &NBSP" MORE THAN 1 SPACE DELIMITOR
+      document.write(`${a.join(" &nbsp &nbsp")} <br>`);
+
+      //HERE WE ARE USING ";" DELIMITOR
+      document.write(`${a.join(";")} <br>`);
+
+      //WANT TO PRINT ARRAY DATA VERTICALLY
+      document.write(`${a.join("<BR>")} <br>`);
+
+      //WANT TO PRINT IMAGE BETWEEN 2 VALUES
+      document.write(
+        `${a.join(
+          `<img src='../../../../../Downloads/415519.jpg' width="50px">`
+        )} <br>`
+      );
+    </script>
+  </body>
+</html>

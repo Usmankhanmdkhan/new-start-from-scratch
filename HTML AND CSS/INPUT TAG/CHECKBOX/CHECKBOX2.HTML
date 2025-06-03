@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="test.jsp" method="get">
+      <!-- label+(input+label)*3 -->
+      <label for="">RAM :</label>
+      <br />
+      <!--CHECKED ATTRIBUTE USED FOR DEFAULTLY/INBUILD CHECK THE CHECKBOX WE CAN DO AS MUCH WE WANT-->
+      <input type="checkbox" id="ram1" name="ram" value="4GB" checked />
+      <label for="">4GB</label>
+      <br />
+      <input type="checkbox" id="ram1" name="ram" value="8GB" />
+      <label for="">8GB</label>
+      <br />
+      <input type="checkbox" id="ram1" name="ram" value="16GB" />
+      <label for="">16GB</label>
+      <br />
+
+      <br /><br />
+
+      <label for="">BrandName:</label>
+      <br />
+      <input type="checkbox" id="bd1" name="brandname" value="SANDISK" />
+      <label for="">SANDISK</label>
+      <br />
+      <input type="checkbox" id="bd2" name="brandname" value="HP" />
+      <label for="">HP</label>
+      <br />
+      <input type="checkbox" id="bd3" name="brandname" value="TOSHIBA" />
+      <label for="">TOSHIBA</label>
+      <br />
+
+      <input type="submit" value="Filter" />
+    </form>
+  </body>
+</html>

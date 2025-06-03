@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //using variable before declaring it called hoisting it is possible with "var"
+      x = 10; //assigning value to varibale
+      document.write(x, "<br>");
+      var x; //declaring varible
+
+      //if we do same thing with let it will give an error
+      y = 50;
+      document.write(y, "<br>");
+      let y;
+      //Uncaught ReferenceError: Cannot access 'y' before initialization
+      //at HOISTING.HTML:16:8
+    </script>
+  </body>
+</html>

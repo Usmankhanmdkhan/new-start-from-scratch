@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="test.jsp">
+      <!--IT WILL PASS VALUE AS ON ONLY IF THERE IS NO VALUE-->
+      <input type="checkbox" id="cb1" name="country" />
+      <br />
+      <input type="checkbox" value="england" id="cb1" name="country" />
+      <br />
+      <input type="checkbox" value="india" id="cb2" name="country" />
+      <br />
+      <input type="checkbox" value="australia" id="cb3" name="country" />
+      <br />
+      <input type="submit" value="Submit" name="submit" />
+    </form>
+
+    <!-- file:///C:/Users/PATHAN/Desktop/new%20journey%20from%20scratch/INPUT%20TAG/CHECKBOX/test.jsp?
+    country=india&sub=Submit -->
+    <!--ABOVE WE ARE HAVING NAME ATTRIBUTE TO SUMBIT BUTTON AND IT IS SHOWING IN URL THAT WHAT VALUE 
+    IS GOING TO SERVER-->
+  </body>
+  
+</html>

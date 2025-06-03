@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      li:first-child {
+        color: red;
+      }
+
+      li:last-child {
+        color: blue;
+      }
+
+      /*we can select any number in the list and change its color using like below*/
+      /* li:nth-child(5){
+        color:pink
+      } */
+
+      li:nth-child(even) {
+        /*here we can use odd too*/
+        color: green;
+      }
+      li:hover{
+        color: yellow;
+        /*here we changed nature of cursor to pointer while hovering on li tag*/
+        cursor:pointer;    
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li>microsoft</li>
+      <li>oracle</li>
+      <li>amazon</li>
+      <li>zebronics</li>
+      <li>linux</li>
+      <li>snapchat</li>
+      <li>instagram</li>
+      <li>facebook</li>
+      <li>mintra</li>
+      <li>flipcart</li>
+      <li>meesho</li>
+    </ol>
+  </body>
+</html>
